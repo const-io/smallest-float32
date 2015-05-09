@@ -33,7 +33,7 @@ An `object` comprised as follows...
 
 
 
-##### Normalized
+##### Value
 
 Smallest positive __normalized__ single-precision floating-point number.
 

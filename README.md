@@ -26,8 +26,8 @@ An `object` comprised as follows...
 
 ``` javascript
 {
-	'VALUE': <Number>,
-	'DENORMALIZED': <Number>
+	'VALUE': 1.1754943508222875e-38,
+	'DENORMALIZED': 1.401298464324817e-45
 }
 ```
 

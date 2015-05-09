@@ -24,7 +24,7 @@ var SMALLEST_FLOAT32 = require( 'compute-const-smallest-float32' );
 
 Returns an `object` containing the following constants...
 
-##### SMALLEST_FLOAT32.VALUE
+##### Normalized
 
 Smallest positive __normalized__ single-precision floating-point number.
 
@@ -33,7 +33,7 @@ SMALLEST_FLOAT32.VALUE === 1 / Math.pow( 2, 127-1 );
 ```
 
 
-##### SMALLEST_FLOAT32.DENORMALIZED
+##### Denormalized
 
 Smallest positive __denormalized__ single-precision floating-point number.
 

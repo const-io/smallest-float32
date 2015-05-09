@@ -22,25 +22,23 @@ var SMALLEST_FLOAT32 = require( 'compute-const-smallest-float32' );
 
 #### SMALLEST_FLOAT32
 
+Returns an `object` containing the following constants...
+
+##### SMALLEST_FLOAT32.VALUE
+
 Smallest positive __normalized__ single-precision floating-point number.
 
 ``` javascript
-SMALLEST_FLOAT32 === 1 / Math.pow( 2, 127-1 );
-```
-
-__Note__: the exported value is a `Number` object. To return the `number` primitive,
-
-``` javascript
-var val = SMALLEST_FLOAT32.valueOf();
+SMALLEST_FLOAT32.VALUE === 1 / Math.pow( 2, 127-1 );
 ```
 
 
-#### SMALLEST_FLOAT32.denormalized
+##### SMALLEST_FLOAT32.DENORMALIZED
 
 Smallest positive __denormalized__ single-precision floating-point number.
 
 ``` javascript
-SMALLEST_FLOAT32.denormalized === 1 / Math.pow( 2, 127-1+23 );
+SMALLEST_FLOAT32.DENORMALIZED === 1 / Math.pow( 2, 127-1+23 );
 ```
 
 
@@ -49,10 +47,10 @@ SMALLEST_FLOAT32.denormalized === 1 / Math.pow( 2, 127-1+23 );
 ``` javascript
 var SMALLEST_FLOAT32 = require( 'compute-const-smallest-float32' );
 
-console.log( SMALLEST_FLOAT32.valueOf() );
+console.log( SMALLEST_FLOAT32.VALUE );
 // returns 1.1754943508222875e-38
 
-console.log( SMALLEST_FLOAT32.denormalized );
+console.log( SMALLEST_FLOAT32.DENORMALIZED );
 // returns 1.401298464324817e-45
 ```
 

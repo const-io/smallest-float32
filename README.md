@@ -22,7 +22,16 @@ var SMALLEST_FLOAT32 = require( 'compute-const-smallest-float32' );
 
 #### SMALLEST_FLOAT32
 
-Returns an `object` containing the following constants...
+An `object` comprised as follows...
+
+``` javascript
+{
+	'VALUE': <Number>,
+	'DENORMALIZED': <Number>
+}
+```
+
+
 
 ##### Normalized
 

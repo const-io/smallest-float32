@@ -28,7 +28,7 @@ Smallest positive __normalized__ single-precision floating-point number.
 SMALLEST_FLOAT32 === 1 / Math.pow( 2, 127-1 );
 ```
 
-__Note__: the exported value is a `Number` object. To return the `number` primitive
+__Note__: the exported value is a `Number` object. To return the `number` primitive,
 
 ``` javascript
 var val = SMALLEST_FLOAT32.valueOf();

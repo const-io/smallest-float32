@@ -25,7 +25,18 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "smallest",
+    "min",
+    "minimum",
+    "positive",
+    "nonzero",
+    "float32",
+    "32-bit",
+    "const",
+    "constant",
+    "normalized",
+    "denormalized"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/const-smallest-float32/issues"

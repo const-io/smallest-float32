@@ -1,8 +1,8 @@
-const-smallest-float32
+SMALLEST FLOAT32
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Smallest positive single-precision floating-point number.
+> Smallest positive [single-precision floating-point number](http://en.wikipedia.org/wiki/IEEE_754-1985).
 
 
 ## Installation
@@ -17,18 +17,43 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-const-smallest-float32' );
+var SMALLEST_FLOAT32 = require( 'compute-const-smallest-float32' );
 ```
 
-#### foo( arr )
+#### SMALLEST_FLOAT32
 
-What does this function do?
+Smallest positive __normalized__ single-precision floating-point number.
+
+``` javascript
+SMALLEST_FLOAT32 === 1 / Math.pow( 2, 127-1 );
+```
+
+__Note__: the exported value is a `Number` object. To return the `number` primitive
+
+``` javascript
+var val = SMALLEST_FLOAT32.valueOf();
+```
+
+
+#### SMALLEST_FLOAT32.denormalized
+
+Smallest positive __denormalized__ single-precision floating-point number.
+
+``` javascript
+SMALLEST_FLOAT32.denormalized === 1 / Math.pow( 2, 127-1+23 );
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-const-smallest-float32' );
+var SMALLEST_FLOAT32 = require( 'compute-const-smallest-float32' );
+
+console.log( SMALLEST_FLOAT32.valueOf() );
+// returns 1.1754943508222875e-38
+
+console.log( SMALLEST_FLOAT32.denormalized );
+// returns 1.401298464324817e-45
 ```
 
 To run the example code from the top-level application directory,

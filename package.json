@@ -1,5 +1,5 @@
 {
-  "name": "compute-const-smallest-float32",
+  "name": "const-smallest-float32",
   "version": "1.0.1",
   "description": "Smallest positive single-precision floating-point number.",
   "author": {

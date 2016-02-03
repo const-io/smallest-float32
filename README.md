@@ -8,14 +8,14 @@ SMALLEST FLOAT32
 ## Installation
 
 ``` bash
-$ npm install compute-const-smallest-float32
+$ npm install const-smallest-float32
 ```
 
 
 ## Usage
 
 ``` javascript
-var SMALLEST_FLOAT32 = require( 'compute-const-smallest-float32' );
+var SMALLEST_FLOAT32 = require( 'const-smallest-float32' );
 ```
 
 #### SMALLEST_FLOAT32
@@ -51,7 +51,7 @@ SMALLEST_FLOAT32.DENORMALIZED === 1 / Math.pow( 2, 127-1+23 );
 ## Examples
 
 ``` javascript
-var SMALLEST_FLOAT32 = require( 'compute-const-smallest-float32' );
+var SMALLEST_FLOAT32 = require( 'const-smallest-float32' );
 
 console.log( SMALLEST_FLOAT32.VALUE );
 // returns 1.1754943508222875e-38
@@ -124,8 +124,8 @@ $ make view-browser-tests
 Copyright &copy; 2015-2016. The [Compute.io][compute-io] Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/compute-const-smallest-float32.svg
-[npm-url]: https://npmjs.org/package/compute-const-smallest-float32
+[npm-image]: http://img.shields.io/npm/v/const-smallest-float32.svg
+[npm-url]: https://npmjs.org/package/const-smallest-float32
 
 [build-image]: http://img.shields.io/travis/const-io/smallest-float32/master.svg
 [build-url]: https://travis-ci.org/const-io/smallest-float32

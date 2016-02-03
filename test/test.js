@@ -1,36 +1,25 @@
-/* global require, describe, it */
 'use strict';
 
 // MODULES //
 
-var // Expectation library:
-	chai = require( 'chai' ),
-
-	// Module to be tested:
-	constants = require( './../lib' );
-
-
-// VARIABLES //
-
-var expect = chai.expect,
-	assert = chai.assert;
+var tape = require( 'tape' );
+var pow = require( 'math-power' );
+var constants = require( './../lib' );
 
 
 // TESTS //
 
-describe( 'compute-const-smallest-float32', function tests() {
+tape( 'the main export is an object', function test( t ) {
+	t.equal( typeof constants, 'object', 'main export is an object' );
+	t.end();
+});
 
-	it( 'should export an object', function test() {
-		expect( constants ).to.be.an( 'object' );
-	});
+tape( 'the object contains the smallest normal value', function test( t ) {
+	t.equal( constants.VALUE, pow(2, -126), 'equals 2**-126' );
+	t.end();
+});
 
-	it( 'should expose a constant', function test() {
-		expect( constants.VALUE ).to.be.a( 'number' );
-	});
-
-	it( 'should expose a denormalized value', function test() {
-		expect( constants.DENORMALIZED ).to.be.a( 'number' );
-		assert.ok( constants.VALUE > constants.DENORMALIZED );
-	});
-
+tape( 'the object contains the smallest denormalized value', function test( t ) {
+	t.equal( constants.DENORMALIZED, pow(2,-126)*pow(2,-23), 'equals 2**-126 * 2**-23' );
+	t.end();
 });

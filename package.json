@@ -1,6 +1,6 @@
 {
   "name": "const-smallest-float32",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Smallest positive single-precision floating-point number.",
   "author": {
     "name": "Athan Reines",
